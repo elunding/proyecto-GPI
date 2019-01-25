@@ -20,12 +20,8 @@ cadena = 'Elige una de las respuestas\n'
 for pregunta in preguntas:
     print(pregunta)
     resp = input(cadena)
-    if(resp != 'a' or 'b' or 'c' or 'd'):
+    if(resp != 'a' and resp!='b') and (resp != 'c' and resp!='d'):
         print('respuesta invalida')
         break
     else:
         respuestas.append(resp)
-
-
-
-
